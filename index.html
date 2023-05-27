@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/styles/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <section class="banner">
+        <form action="">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-circle"></i></span>
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" aria-describedby="basic-addon1" id="nombre">
+              </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope-at-fill"></i></span>
+                <input type="text" class="form-control" placeholder="Correo" aria-label="Correo" aria-describedby="basic-addon1">
+              </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"><i class="bi bi-phone"></i></span>
+                <input type="text" class="form-control" placeholder="telefono" aria-label="telefono" aria-describedby="basic-addon1">
+              </div>
+        </form>
+    </section>
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <h2>Reportes Empresariales</h2>
+                <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, ipsam magnam possimus quos repellat facere corporis quis fugit delectus sapiente porro, quisquam itaque molestiae odit laborum expedita, ut corrupti non fuga enim consequuntur aliquam saepe. Soluta vero iure adipisci totam cupiditate repellendus. Vitae error quam ducimus nihil fugit non dolorem neque nisi doloremque ipsam dolores totam, corporis sapiente veniam aperiam qui, natus unde consequuntur vero delectus! Atque culpa non ratione officiis eum quae, deserunt ad blanditiis provident voluptates incidunt quam quo temporibus. Ullam, corporis? Nulla amet iste eaque voluptatibus atque earum doloribus, rem alias modi suscipit similique cupiditate! Corrupti, suscipit.</p>
+                
+                <button type="button" class="btn btn-dark" id="btnGenerarReporte">Generar reporte</button>
+
+                <div id="contenedor" class="d-none">
+
+                  <div class="container my-3">
+                    <div class="row">
+                      <div class="col">
+                        <h4 id="mensaje">Apreciado usuario el reporte generado es: </h4>
+                      </div>
+                    </div>
+                  </div>
+
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Empleados Jovenes</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Empleados Experimentados</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Empleados bajos recursos</button>
+                    </li>
+                    <!-- <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" disabled>Disabled</button>
+                    </li> -->
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                      <iframe class="w-100" src="./tables/tabla.html" frameborder="0" height="400">
+                      </iframe>
+                    </div>
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                      <iframe class="w-100" src="./tables/tablaempleadosADespedir.html" frameborder="0" height="400">
+                      </iframe>
+                    </div>
+                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                      <iframe class="w-100" src="./tables/tablaempleadosSalarioBajo.html" frameborder="0" height="400">
+                      </iframe>
+                    </div>
+                  </div>
+              </div>
+                </div>
+
+                
+            <div class="col-12 col-md-4">
+                <img class="img-fluid w-100" src="./assets/img/people2.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+    <section class="banner2">
+
+    </section>
+    <footer>
+        <section class="container-fluid bg-dark p-4 text-center text-white">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <h3>Analisis</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis nulla optio ex neque vero, totam molestias? Excepturi minima enim, adipisci aliquid debitis dicta soluta vel iusto quis ullam facilis corporis maiores voluptatem, quisquam, eveniet vero. At cumque, exercitationem voluptatum iste dolore sed sequi tempora minima enim cupiditate amet maiores illum.</p>
+                </div>
+                <div class="col-12 col-md-4 border-start">
+                    <a href=""><i class="bi bi-instagram fs-2 me-3 text-white"></i></a>
+                    <a href=""><i class="bi bi-facebook fs-2 me-3 text-white"></i></i></a>
+                    <a href=""><i class="bi bi-whatsapp fs-2 me-3 text-white"></i></i></a>
+                </div>
+            </div>
+        </section>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="./controller/controlador.js"></script>
+</body>
+</html>
+
+
